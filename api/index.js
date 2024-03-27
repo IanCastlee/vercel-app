@@ -6,7 +6,7 @@ import registerRoutes from "./routes/register.js";
 const app = express();
 
 app.use(cors({
-  origin: "https://localhost:5173",
+  origin: "http://localhost:5173",
   credentials: true // Pahintulutan ang pagpapadala ng cookies mula sa frontend
 }));
 app.use(express.json());
