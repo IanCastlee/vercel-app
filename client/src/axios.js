@@ -1,4 +1,4 @@
 export const makeRequest = axios.create({
-    baseURL: "https://vercel-app-client-ten.vercel.app/api/", // Adjust the baseURL here
+    baseURL: "https://vercel-app-api-three.vercel.app/api/",
     withCredentials: true,
 });
