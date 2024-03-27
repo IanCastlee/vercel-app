@@ -6,11 +6,13 @@ import registerRoutes from "./routes/register.js";
 const app = express();
 
 app.use(cors({
-  origin: "https://vercel-app-client-ten.vercel.app", // Adjust the origin here
-  credentials: true // Allow sending cookies from frontend
+  origin: "https://vercel-app-client-ten.vercel.app",
+  credentials: true
 }));
 app.use(express.json());
 app.use(cookieParser());
+
+app.options("*", cors()); // Enable preflight requests for all routes
 
 app.use("/api/register", registerRoutes);
 
