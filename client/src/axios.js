@@ -1,6 +1,4 @@
-import axios from "axios";
-
 export const makeRequest = axios.create({
-    baseURL: "https://localhost:8801/api/",
+    baseURL: "https://vercel-app-client-ten.vercel.app/api/", // Adjust the baseURL here
     withCredentials: true,
 });
