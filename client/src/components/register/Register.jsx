@@ -28,6 +28,7 @@ const Register = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
+      <h3>GUMANA KANA </h3>
       <input type="text" name="name" onChange={handleChange} />
       <input type="text" name="lname" onChange={handleChange} />
 
